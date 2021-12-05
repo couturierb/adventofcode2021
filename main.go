@@ -3,11 +3,23 @@ package main
 import (
 	"adventofcode2021/aoc1"
 	"adventofcode2021/aoc2"
+	"adventofcode2021/aoc3"
+	"adventofcode2021/aoc4"
 )
 
 func main() {
-	jour2()
+	jour4()
+	// jour3()
+	// jour2()
 	// jour1()
+}
+
+func jour4() {
+	aoc4.Ex1()
+}
+
+func jour3() {
+	aoc3.Ex1()
 }
 
 func jour2() {
