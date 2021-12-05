@@ -76,7 +76,7 @@ func (b Board) Print() {
 	}
 }
 
-func Ex1() {
+func Ex1Ex2() {
 	input := utils.ReadFileSplitToArray("aoc4/aoc4.txt")
 	var tirage []string
 	boards := []Board{}
@@ -109,9 +109,4 @@ func Ex1() {
 			}
 		}
 	}
-
-	// fmt.Println(tirage)
-	// for _, board := range boards {
-	// 	board.Print()
-	// }
 }

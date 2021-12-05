@@ -5,17 +5,23 @@ import (
 	"adventofcode2021/aoc2"
 	"adventofcode2021/aoc3"
 	"adventofcode2021/aoc4"
+	"adventofcode2021/aoc5"
 )
 
 func main() {
-	jour4()
+	jour5()
+	// jour4()
 	// jour3()
 	// jour2()
 	// jour1()
 }
 
+func jour5() {
+	aoc5.Ex1()
+}
+
 func jour4() {
-	aoc4.Ex1()
+	aoc4.Ex1Ex2()
 }
 
 func jour3() {
