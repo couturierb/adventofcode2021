@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	aoc6.Ex1()
+	// aoc6.Ex1()
+	aoc6.Ex2()
 	// aoc5.Ex1()
 	// aoc4.Ex1Ex2()
 	// aoc3.Ex1()
