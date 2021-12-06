@@ -8,6 +8,10 @@ import (
 	"strings"
 )
 
+func main() {
+
+}
+
 func Ex1() {
 	input := utils.ReadFileSplitToArray("aoc5/aoc5.txt")
 	reg := regexp.MustCompile("[0-9]+,[0-9]+")
