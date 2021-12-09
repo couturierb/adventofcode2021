@@ -9,7 +9,7 @@ import (
 var LINE_SIZE int = 12
 
 func Ex1() {
-	input := utils.ReadFileSplitToArray("aoc3/aoc3.txt")
+	input := utils.ReadFileSplitLineToArray("aoc3/aoc3.txt")
 
 	countArray := make([]int, LINE_SIZE)
 	for _, inputValue := range input {
@@ -42,7 +42,7 @@ func Ex1() {
 }
 
 func Ex2() {
-	input := utils.ReadFileSplitToArray("aoc3/aoc3.txt")
+	input := utils.ReadFileSplitLineToArray("aoc3/aoc3.txt")
 
 	oxygenGenerator := findOxygen(input, 0)
 	co2Scrubber := findco2Scrubber(input, 0)

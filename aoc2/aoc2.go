@@ -8,7 +8,7 @@ import (
 )
 
 func Ex1() {
-	commands := utils.ReadFileSplitToArray("aoc2/aoc2.txt")
+	commands := utils.ReadFileSplitLineToArray("aoc2/aoc2.txt")
 	distance := 0
 	depth := 0
 
@@ -29,7 +29,7 @@ func Ex1() {
 }
 
 func Ex2() {
-	commands := utils.ReadFileSplitToArray("aoc2/aoc2.txt")
+	commands := utils.ReadFileSplitLineToArray("aoc2/aoc2.txt")
 	distance := 0
 	depth := 0
 	aim := 0

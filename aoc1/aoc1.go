@@ -9,7 +9,7 @@ import (
 func Ex1() {
 	previous := 0
 	total := 0
-	numbers := utils.ReadFileSplitToArray("aoc1/aoc1.txt")
+	numbers := utils.ReadFileSplitLineToArray("aoc1/aoc1.txt")
 
 	for _, value := range numbers {
 		currentMeasurment, _ := strconv.Atoi(value)
@@ -24,7 +24,7 @@ func Ex1() {
 
 func Ex2() {
 	total := 0
-	numbers := utils.ReadFileSplitToArray("aoc1/aoc1.txt")
+	numbers := utils.ReadFileSplitLineToArray("aoc1/aoc1.txt")
 
 	for key, value := range numbers {
 		currentMeasurment, _ := strconv.Atoi(value)

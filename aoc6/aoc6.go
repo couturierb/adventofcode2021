@@ -11,7 +11,7 @@ const MAX_DAYS2 = 256
 
 func Ex1() {
 	input := utils.ReadFileString("aoc6/aoc6.txt")
-	lanternfish := utils.ConvertFormattedStringToIntArray(input)
+	lanternfish := utils.ConvertCommaStringToIntArray(input)
 
 	for i := 0; i < MAX_DAYS1; i++ {
 		howManyNewFish := 0
@@ -34,7 +34,7 @@ func Ex1() {
 
 func Ex2() {
 	input := utils.ReadFileString("aoc6/aoc6.txt")
-	lanternfish := utils.ConvertFormattedStringToIntArray(input)
+	lanternfish := utils.ConvertCommaStringToIntArray(input)
 	lanternfish2 := [9]int{}
 
 	for _, fish := range lanternfish {

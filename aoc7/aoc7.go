@@ -10,7 +10,7 @@ import (
 
 func Ex1() {
 	input := utils.ReadFileString("aoc7/aoc7.txt")
-	crabs := utils.ConvertFormattedStringToIntArray(input)
+	crabs := utils.ConvertCommaStringToIntArray(input)
 	sort.Ints(crabs)
 	// fmt.Println(crabs)
 
@@ -34,7 +34,7 @@ func Ex1() {
 
 func Ex2() {
 	input := utils.ReadFileString("aoc7/aoc7.txt")
-	crabs := utils.ConvertFormattedStringToIntArray(input)
+	crabs := utils.ConvertCommaStringToIntArray(input)
 
 	// search average
 	var sum int

@@ -77,7 +77,7 @@ func (b Board) Print() {
 }
 
 func Ex1Ex2() {
-	input := utils.ReadFileSplitToArray("aoc4/aoc4.txt")
+	input := utils.ReadFileSplitLineToArray("aoc4/aoc4.txt")
 	var tirage []string
 	boards := []Board{}
 	currentBoard := -1

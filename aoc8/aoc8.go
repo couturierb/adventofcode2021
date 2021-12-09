@@ -8,7 +8,7 @@ import (
 )
 
 func Ex1() {
-	input := utils.ReadFileSplitToArray("aoc8/aoc8.txt")
+	input := utils.ReadFileSplitLineToArray("aoc8/aoc8.txt")
 	var howManyDigit int
 
 	for _, value := range input {
@@ -25,7 +25,7 @@ func Ex1() {
 }
 
 func Ex2() {
-	input := utils.ReadFileSplitToArray("aoc8/aoc8.txt")
+	input := utils.ReadFileSplitLineToArray("aoc8/aoc8.txt")
 
 	var total int
 	for _, inputValue := range input {

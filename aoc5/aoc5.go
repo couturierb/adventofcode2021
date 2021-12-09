@@ -13,7 +13,7 @@ func main() {
 }
 
 func Ex1() {
-	input := utils.ReadFileSplitToArray("aoc5/aoc5.txt")
+	input := utils.ReadFileSplitLineToArray("aoc5/aoc5.txt")
 	reg := regexp.MustCompile("[0-9]+,[0-9]+")
 	results := [1000][1000]int{}
 
