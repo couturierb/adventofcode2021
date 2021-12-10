@@ -3,7 +3,8 @@ package main
 import "adventofcode2021/aoc9"
 
 func main() {
-	aoc9.Ex1()
+	aoc9.Ex2()
+	// aoc9.Ex1()
 	// aoc8.Ex2()
 	// aoc8.Ex1()
 	// aoc7.Ex2()

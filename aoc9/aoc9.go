@@ -59,14 +59,20 @@ func Ex2() {
 		grid = append(grid, utils.ConvertStringToIntArray(value))
 	}
 
-	var total_basin_size int
+	var basins []int
 	for x := 0; x < len(grid); x++ {
 		for y := 0; y < len(grid[x]); y++ {
 			if isLowPoint(grid, x, y) {
-				total_basin_size += countBasinSize(&grid, x, y)
+				basinFounded := countBasinSize(&grid, x, y)
+				basins = append(basins, basinFounded)
 			}
 		}
 	}
+
+	basins, value1 := popGreatest(basins)
+	basins, value2 := popGreatest(basins)
+	basins, value3 := popGreatest(basins)
+	fmt.Println(value1 * value2 * value3)
 }
 
 func countBasinSize(grid *[][]int, x int, y int) int {
@@ -74,25 +80,42 @@ func countBasinSize(grid *[][]int, x int, y int) int {
 	(*grid)[x][y] = 9
 	totalBasin := 1
 
-	if current_value == 9 {
+	if current_value == 8 {
 		return totalBasin
 	}
 
+	// haut
 	if x > 0 && (*grid)[x-1][y] == current_value+1 {
 		totalBasin += countBasinSize(grid, x-1, y)
 	}
 
-	if x < len(*grid)-1 && grid[x+1][y] == current_value+1 {
+	// bas
+	if x < len(*grid)-1 && (*grid)[x+1][y] == current_value+1 {
 		totalBasin += countBasinSize(grid, x+1, y)
 	}
 
+	// gauche
 	if y > 0 && (*grid)[x][y-1] == current_value+1 {
 		totalBasin += countBasinSize(grid, x, y-1)
 	}
 
+	// droite
 	if y < len((*grid)[0])-1 && (*grid)[x][y+1] == current_value+1 {
 		totalBasin += countBasinSize(grid, x, y+1)
 	}
 
 	return totalBasin
+}
+
+func popGreatest(basins []int) ([]int, int) {
+	var greatest int
+	var greatestIndex int
+	for index, value := range basins {
+		if value > greatest {
+			greatest = value
+			greatestIndex = index
+		}
+	}
+
+	return append(basins[:greatestIndex], basins[greatestIndex+1:]...), greatest
 }
