@@ -1,9 +1,10 @@
 package main
 
-import "adventofcode2021/aoc13"
+import "adventofcode2021/aoc14"
 
 func main() {
-	aoc13.Ex2()
+	aoc14.Ex1()
+	// aoc13.Ex2()
 	// aoc13.Ex1()
 	// aoc9.Ex2()
 	// aoc9.Ex1()
