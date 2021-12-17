@@ -39,3 +39,9 @@ func ConvertStringToIntArray(in string) []int {
 	}
 	return returnArray
 }
+
+func PrintGrid(grid [][]int) {
+	for _, line := range grid {
+		fmt.Println(line)
+	}
+}
